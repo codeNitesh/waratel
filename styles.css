@@ -1,0 +1,72 @@
+@import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+}
+.intro{
+    width: 100%;
+    max-height: 100vh;
+    background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%)); ;
+    background-size: cover contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-bottom-left-radius: 20%;
+
+    padding: 60px 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro .intro-headers{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.intro .intro-headers .title{
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.intro .intro-headers .sub-title{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+.btn-group .btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+
+    font-weight: 550;
+}
+
+.btn-group .btn.btn-white{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+}
