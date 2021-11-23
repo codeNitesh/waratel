@@ -115,9 +115,8 @@ body{
     border-bottom-left-radius: 120px;
     position:relative;
 
-    background-position: 55% -200%;
-    background-repeat: no-repeat;
-    background-size: 150%, 100%;;
+    background-position: left -6rem top -15rem, left;    background-repeat: no-repeat;
+    background-size: 150%, 100%;
 }
 
 .phone-img{
