@@ -14,11 +14,10 @@ body{
     width: 100%;
     max-height: 100vh;
     background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%)); ;
-    background-size: cover contain;
     background-repeat: no-repeat;
     background-position: center;
 
-    border-bottom-left-radius: 20%;
+    border-bottom-left-radius: 120px;
 
     padding: 60px 30px;
 }
@@ -33,7 +32,7 @@ body{
     color: hsl(0, 0%, 100%);
 }
 
-.intro .intro-headers .title{
+.intro .intro-headers .title, .main-component .component .title{
     font-size: 2.2rem;
     font-weight: 500;
     padding-top: 80px;
@@ -44,6 +43,7 @@ body{
     font-size: 1.2rem;
     font-weight: 300;
     padding-bottom: 40px;
+    line-height: 1.8em;
 }
 
 .btn-group{
@@ -53,6 +53,7 @@ body{
 
     padding-bottom: 50px;
 }
+
 .btn-group .btn{
     outline: none;
     border: none;
@@ -64,9 +65,57 @@ body{
     border-radius: 30px;
 
     font-weight: 550;
+    cursor: pointer;
 }
 
 .btn-group .btn.btn-white{
     background-color: hsl(0, 0%, 100%);
     color: hsl(356, 100%, 66%);
+}
+
+.main-component{
+    padding: 60px 0px;
+}
+
+.main-component .component{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.main-component .component .title{
+    font-size: 1.8rem;
+    color: hsl(208, 49%, 24%);
+    font-weight: 500;
+    padding: 0 30px;
+    padding-bottom: 30px;
+}
+
+.basic-img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+}
+
+.component .component-content{
+    line-height: 1.8em;
+    color: hsl(207, 13%, 34%);
+    font-weight: 300;
+    padding: 0 30px;
+}
+
+.illus-component{
+    border: 1px solid hsl(353, 100%, 62%);
+    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 120px;
+}
+
+.images{
+    position: relative;
+    top: 0;
+}
+.images .phone-bg-img{
+    width: 100%;
+    /* background-color: plum; */
+    /* top: %; */
 }
