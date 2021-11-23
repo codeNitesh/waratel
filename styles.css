@@ -12,7 +12,6 @@ body{
 }
 .intro{
     width: 100%;
-    max-height: 100vh;
     background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%)); ;
     background-repeat: no-repeat;
     background-position: center;
@@ -94,7 +93,7 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .component .component-content{
@@ -104,18 +103,29 @@ body{
     padding: 0 30px;
 }
 
-.illus-component{
-    border: 1px solid hsl(353, 100%, 62%);
-    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
-    border-top-right-radius: 120px;
+.component.special-component{
+    position: relative;
 }
 
-.images{
-    position: relative;
-    top: 0;
+.illus-component{
+    margin-top: 200px;
+    background-image: url("./images/bg-pattern-circles.svg"),
+    linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+    position:relative;
+
+    background-position: 55% -200%;
+    background-repeat: no-repeat;
+    background-size: 150%, 100%;;
 }
-.images .phone-bg-img{
-    width: 100%;
-    /* background-color: plum; */
-    /* top: %; */
+
+.phone-img{
+    position: relative;
+    top: -200px;
+}
+
+.illus-content{
+    position: relative;
+    top: -140px;
 }
