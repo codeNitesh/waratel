@@ -83,7 +83,7 @@ body{
 
 .main-component .component .title{
     font-size: 1.8rem;
-    color: hsl(208, 49%, 24%);
+    color: hsl(208, 49%, 14%);
     font-weight: 500;
     padding: 0 30px;
     padding-bottom: 30px;
@@ -134,4 +134,36 @@ body{
     color: hsl(0, 0%, 100%);
 }
 
+.footer{
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 120px;
 
+    text-align: center;
+    padding: 60px 0;
+    color: hsl(0, 0%, 80%);
+}
+
+.footer .footer-img{
+    padding-bottom: 20px;
+}
+
+.footer .footer-list ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 20px 0;
+}
+.footer .footer-list ul:last-child{
+    padding-bottom: 0;
+}
+
+.footer .footer-list ul li:first-child{
+    font-weight: 500;
+    padding: 20px 0;
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer .footer-list ul li:not(li:first-child){
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
