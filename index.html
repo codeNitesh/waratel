@@ -12,13 +12,35 @@
   <div class="intro">
     <div class="navbar">
       <img src="./images/logo.svg" alt="">
-      <img onclick="showDropDown()" src="./images/icon-hamburger.svg" alt="menu">
+      <img id="hamburgerIcon" onclick="showDropDown()" src="./images/icon-hamburger.svg" alt="menu">
+      <img id="closeIcon" class="hide" onclick="showDropDown()" src="./images/icon-close.svg" alt="menu">
     </div>
     <div id="navbar" class="navbar-dropdown">
       <ul>
-        <li>Product</li>
-        <li>Company</li>
-        <li>Connect</li>
+        <li><span onclick="open_navbar_dropdown_ul_card1()" class="navbar-dropdown_option">Product <img src="./images/icon-arrow-dark.svg" alt=""></span>
+          <ul id="navbar-dropdown_ul_card1" class="navbar-dropdown_ul_card">
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </li>
+        <li><span onclick="open_navbar_dropdown_ul_card2()" class="navbar-dropdown_option">Company <img src="./images/icon-arrow-dark.svg" alt=""></span>
+          <ul id="navbar-dropdown_ul_card2" class="navbar-dropdown_ul_card">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blogs</li>
+            <li>Careers</li>
+          </ul>
+        </li>
+        <li><span onclick="open_navbar_dropdown_ul_card3()" class="navbar-dropdown_option">Connect <img src="./images/icon-arrow-dark.svg" alt=""></span>
+          <ul id="navbar-dropdown_ul_card3" class="navbar-dropdown_ul_card">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </li>
       </ul>
       <div class="dropdown-btns">
         <button class="btn login-btn">Login</button>

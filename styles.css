@@ -39,20 +39,40 @@ body{
 
     text-align: center;
     padding: 10px 0;
+    box-shadow: 1px 5px 5px rgba(12, 12, 12, 0.3);
 }
 
 
-.navbar-dropdown ul li{
+.navbar-dropdown > ul > li{
     margin: 30px 0;
-    color: hsl(208, 49%, 14%);
-    font-weight: 500;
+    color: hsl(208, 49%, 10%);
+}
+
+.navbar-dropdown_ul_card{
+    background-color: hsl(0, 0%, 95%);
+    margin: 20px 40px;
+    padding: 20px 0;
+    color: hsl(208, 49%, 25%);
+    border-radius: 5px;
+    display: none;
+}
+
+.navbar-dropdown_option{
+    cursor: pointer;
+}
+
+.navbar-dropdown_ul_card > li{
+    padding: 10px 0;
 }
 
 .dropdown-btns{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0;
+    padding-bottom: 30px; 
+    padding-top: 20px;
+    margin: 0 40px;
+    border-top: 2px solid hsl(0, 0%, 95%);
 }
 
 .btn.login-btn{
@@ -209,7 +229,22 @@ body{
     font-size: 1.1rem;
 }
 
-
+.hide{
+    display: none;
+}
 .show{
     display: block;
+    animation: growDown 300ms ease-in-out forwards
 }
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    80% {
+      transform: scaleY(1.1)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+  }
