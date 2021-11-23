@@ -12,17 +12,19 @@
   <div class="intro">
     <div class="navbar">
       <img src="./images/logo.svg" alt="">
-      <img src="./images/icon-hamburger.svg" alt="menu">
+      <img onclick="showDropDown()" src="./images/icon-hamburger.svg" alt="menu">
     </div>
-    <!-- <div class="navbar-dropdown">
+    <div id="navbar" class="navbar-dropdown">
       <ul>
         <li>Product</li>
         <li>Company</li>
         <li>Connect</li>
-        <li><button>Login</button></li>
-        <li><button>Signup</button></li>
       </ul>
-    </div> -->
+      <div class="dropdown-btns">
+        <button class="btn login-btn">Login</button>
+        <button class="btn signup-btn">Signup</button>
+      </div>
+    </div>
     <div class="intro-headers">
       <h1 class="title">A modern publishing platform</h1>
       <p class="sub-title">Grow your audience and build your online brand</p>
@@ -120,5 +122,8 @@
       </ul>
     </div>
   </div>
+
+
+  <script src="./script.js"></script>
 </body>
 </html>
