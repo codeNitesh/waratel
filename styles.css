@@ -128,3 +128,10 @@ body{
     position: relative;
     top: -140px;
 }
+
+.main-component .component.special-component .title,
+.main-component .component.special-component .component-content{
+    color: hsl(0, 0%, 100%);
+}
+
+
