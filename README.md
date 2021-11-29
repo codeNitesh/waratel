@@ -22,7 +22,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Pages](https://your-solution-url.com)
+- Solution URL: [GitHub Pages](https://codenitesh.github.io/waratel/)
 - Live Site URL: [Netlify](https://your-live-site-url.com)
 
 **Having fun building!** 🚀
