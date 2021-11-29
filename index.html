@@ -8,76 +8,82 @@
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | [Blogr]</title>
 </head>
-<body>
+<body id="body">
   <div class="intro">
-    <div class="navbar">
-      <img src="./images/logo.svg" alt="">
-      <img id="hamburgerIcon" onclick="showDropDown()" src="./images/icon-hamburger.svg" alt="menu">
-      <img id="closeIcon" class="hide" onclick="showDropDown()" src="./images/icon-close.svg" alt="menu">
-    </div>
-    <div id="navbar" class="navbar-dropdown">
-      <ul>
-        <li><span onclick="open_navbar_dropdown_ul_card1()" class="navbar-dropdown_option">Product <img src="./images/icon-arrow-dark.svg" alt=""></span>
-          <ul id="navbar-dropdown_ul_card1" class="navbar-dropdown_ul_card">
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
-          </ul>
-        </li>
-        <li><span onclick="open_navbar_dropdown_ul_card2()" class="navbar-dropdown_option">Company <img src="./images/icon-arrow-dark.svg" alt=""></span>
-          <ul id="navbar-dropdown_ul_card2" class="navbar-dropdown_ul_card">
-            <li>About</li>
-            <li>Team</li>
-            <li>Blogs</li>
-            <li>Careers</li>
-          </ul>
-        </li>
-        <li><span onclick="open_navbar_dropdown_ul_card3()" class="navbar-dropdown_option">Connect <img src="./images/icon-arrow-dark.svg" alt=""></span>
-          <ul id="navbar-dropdown_ul_card3" class="navbar-dropdown_ul_card">
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>
-          </ul>
-        </li>
-      </ul>
-      <div class="dropdown-btns">
-        <button class="btn login-btn">Login</button>
-        <button class="btn signup-btn">Signup</button>
+    <div class="navbar-container">
+      <div class="navbar">
+        <img class="logo-icon" src="./images/logo.svg" alt="">
+        <img id="hamburgerIcon" class="navbar_dropdown-icon" onclick="showDropDown()" src="./images/icon-hamburger.svg" alt="menu">
+        <img id="closeIcon" class="navbar_dropdown-icon hide" onclick="showDropDown()" src="./images/icon-close.svg" alt="menu">
+      </div>
+      <div id="navbar" class="navbar-options">
+        <ul id="navbar-main-ul" class="navbar-main-ul">
+          <li class="navbar-main-li"><span onclick="open_navbar_dropdown_ul_card1()" class="navbar-dropdown_option">Product<img class="dropdown-link-dark" src="./images/icon-arrow-dark.svg" alt=""><img class="dropdown-link-light" src="./images/icon-arrow-light.svg" alt=""></span>
+            <ul id="navbar-dropdown_ul_card1" class="navbar-dropdown_ul_card">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+          <li class="navbar-main-li"><span onclick="open_navbar_dropdown_ul_card2()" class="navbar-dropdown_option">Company<img class="dropdown-link-dark" src="./images/icon-arrow-dark.svg" alt=""><img class="dropdown-link-light" src="./images/icon-arrow-light.svg" alt=""></span>
+            <ul id="navbar-dropdown_ul_card2" class="navbar-dropdown_ul_card">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blogs</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+          <li class="navbar-main-li"><span onclick="open_navbar_dropdown_ul_card3()" class="navbar-dropdown_option">Connect<img class="dropdown-link-dark" src="./images/icon-arrow-dark.svg" alt=""><img class="dropdown-link-light" src="./images/icon-arrow-light.svg" alt=""></span>
+            <ul id="navbar-dropdown_ul_card3" class="navbar-dropdown_ul_card">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="dropdown-btns">
+          <button class="btn login-btn">Login</button>
+          <button class="btn signup-btn">Sign Up</button>
+        </div>
       </div>
     </div>
+    
     <div class="intro-headers">
       <h1 class="title">A modern publishing platform</h1>
       <p class="sub-title">Grow your audience and build your online brand</p>
       <div class="btn-group">
-        <button class="btn btn-white">Start for free</button>
-        <button class="btn">Learn More</button>
+        <button class="btn btn-white btn-start-for-free">Start for free</button>
+        <button class="btn btn-learn-more">Learn More</button>
       </div>
     </div>
   </div>
   
   <div class="main-component">
-    <div class="component">
+    <div class="component designed-for-future">
       <h2 class="title">Designed for the future</h2>
-      <img class="basic-img" src="./images/illustration-editor-mobile.svg" alt="">
-    </div>
-    <div class="component">
-      <h2 class="title">Introducing an extensible editor</h2>
-        <p class="component-content">
+
+      <div class="grid-container">
+        <img class="basic-img mobileImg" src="./images/illustration-editor-mobile.svg" alt="">
+        <!-- <img class="basic-img desktopImg img-left" src="./images/illustration-editor-desktop.svg" alt=""> -->
+
+        <div class="grid-container-content">
+          <h2 class="title title-2">Introducing an extensible editor</h2>
+        <p class="component-content component-content-2">
         Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
     The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
     videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
     change the looks of a blog.
         </p>
-    </div>
-    <div class="component">
-      <h2 class="title">Robust content management</h2>
-      <p class="component-content">
-        Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-    </div>
 
+        <h2 class="title title-2">Robust content management</h2>
+        <p class="component-content">
+          Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+      by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+      </div>
+        </div>
+      </div>
 
     <div class="component special-component">
       
@@ -93,27 +99,33 @@
       </div>   
     </div>
 
-    <div class="component">
-      <img class="basic-img" src="./images/illustration-laptop-mobile.svg" alt="">
-      <h2 class="title">
-        Free, open, simple
-      </h2>
-      <p class="component-content">
-        Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-    
-      </p>
-    </div>
-    <div class="component">
-      <h2 class="title">
-        Powerful tooling
-      </h2>
-      <p class="component-content">
-        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-    capable of producing even the most complicated sites.
-    
-      </p>
+    <div class="component free-open-simple">
+      <img class="basic-img mobileImg" src="./images/illustration-laptop-mobile.svg" alt="">
+      <div class="free-open-simple-main">
+        <div class="free-open-simple-content">
+          <h2 class="title">
+            Free, open, simple
+          </h2>
+          <p class="component-content">
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+        
+          </p>
+        </div>
+  
+        <div class="powerful-tooling-content">
+          <h2 class="title">
+            Powerful tooling
+          </h2>
+          <p class="component-content">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.
+        
+          </p>
+        </div>
+      </div>
+      
     </div>
   </div>
   
