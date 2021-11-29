@@ -3,8 +3,6 @@ function showDropDown(){
     document.getElementById("hamburgerIcon").classList.toggle("hide");
     document.getElementById("closeIcon").classList.toggle("hide");
 
-    // document.getElementById("body").classList.toggle("stop-scrolling")
-
     document.getElementById("navbar-dropdown_ul_card1").classList.remove("show")
     document.getElementById("navbar-dropdown_ul_card2").classList.remove("show")
     document.getElementById("navbar-dropdown_ul_card3").classList.remove("show")

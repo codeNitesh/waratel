@@ -288,7 +288,7 @@ ul, li{
 
 /* Break points start */
 
-@media (min-width: 1023px) {
+@media (min-width: 1050px) {
     .navbar_dropdown-icon{
         display: none;
     }
@@ -347,6 +347,8 @@ ul, li{
     .dropdown-btns{
         flex-direction: row;
         border-top: none;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     
     .btn.login-btn{
